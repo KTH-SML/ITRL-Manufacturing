@@ -5,14 +5,17 @@ Welcome to the ITRL Manufacturing GitHub repository, where you can find printing
 ## Printer Specifications
 
 ### Ultimaker 2+
+
 - Maximum Print Speed: 40 mm/s
 - Supported Filaments: PLA
 
 ### Ultimaker 3
+
 - Maximum Print Speed: 70 mm/s
 - Supported Filaments: PLA
 
 ### Voron Trident
+
 - Maximum Print Speed: Up to 200 mm/s
 - Supported Filaments: TPU, ABS, PLA, ASA
 
@@ -34,8 +37,7 @@ Feel free to click on the links above to access the specific printing profiles f
 
 ## Important Note
 
-- Nozzle Diameter: The nozzle diameter is not specified as it may vary based on the material and printing requirements.
-
-Thank you for choosing ITRL Manufacturing for your 3D printing needs. If you have any questions or need further assistance, please don't hesitate to reach out.
+- Nozzle Diameter: The nozzle diameter is not specified as it may vary based on the material and printing requirements. Make sure to check before starting print as it is likely to fail if this setting is set incorrectly.
+- Bed levelling: Do not attempt unless you know what you are doing, it should not need to be done unless the nozzle has been switched or similar hardware adjustments (apart from the ultimaker2+).
 
 Happy 3D Printing!
