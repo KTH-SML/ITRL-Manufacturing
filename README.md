@@ -1,68 +1,41 @@
-# ITRL Manufacturing - 3D Printing Profiles and Specifications
+# ITRL Manufacturing GitHub Repository
 
-Welcome to the ITRL Manufacturing repository on GitHub! Here, you will find 3D printing profiles for three of our in-house printers: Ultimaker 2+, Ultimaker 3, and Voron Trident. We have also included some short specifications for each of these printers.
+Welcome to the ITRL Manufacturing GitHub repository, where you can find printing profiles and specifications for our three 3D printers: Ultimaker 2+, Ultimaker 3, and Voron Trident.
 
-## Table of Contents
-- [Printers](#printers)
-- [Printing Profiles](#printing-profiles)
-  - [Cura](#cura)
-  - [Prusa Slicer](#prusa-slicer)
-  - [Super Slicer](#super-slicer)
-- [In-House Details](#in-house-details)
-
-## Printers
+## Printer Specifications
 
 ### Ultimaker 2+
-- Specifications:
-  - Build Volume: 223 x 223 x 205 mm
-  - Layer Resolution: 20 - 600 microns
-  - Nozzle Diameter: 0.4 mm
-  - Extruder: Single
-- Additional Details: (Add any unique features or capabilities)
+- Maximum Print Speed: 40 mm/s
+- Supported Filaments: PLA
 
 ### Ultimaker 3
-- Specifications:
-  - Build Volume: 215 x 215 x 200 mm
-  - Layer Resolution: 20 - 200 microns
-  - Nozzle Diameter: Dual extrusion with 0.4 mm nozzles
-  - Extruder: Dual
-- Additional Details: (Add any unique features or capabilities)
+- Maximum Print Speed: 70 mm/s
+- Supported Filaments: PLA
 
 ### Voron Trident
-- Specifications:
-  - Build Volume: Customizable (Specify dimensions)
-  - Layer Resolution: 20 - 200 microns
-  - Nozzle Diameter: (Specify nozzle size)
-  - Extruder: (Specify number of extruders)
-- Additional Details: (Add any unique features or capabilities)
+- Maximum Print Speed: Up to 200 mm/s
+- Supported Filaments: TPU, ABS, PLA, ASA
 
 ## Printing Profiles
 
-We have included printing profiles for three popular slicing software: Cura, Prusa Slicer, and Super Slicer.
+You can find our printing profiles for Cura, Prusa Slicer, and SuperSlicer in the following directories:
 
-### Cura
-- Profile File: [Link to Cura Profile](link_to_profile_file)
-- Instructions: (Add any specific instructions for using the Cura profile)
+- [Ultimaker 2+](Printers/Ultimaker2+/Profiles/)
+- [Ultimaker 3](Printers/Ultimaker3/Profiles/)
+- [Voron Trident](Printers/Voron%20Trident/Profiles/)
 
-### Prusa Slicer
-- Profile File: [Link to Prusa Slicer Profile](link_to_profile_file)
-- Instructions: (Add any specific instructions for using the Prusa Slicer profile)
+Feel free to click on the links above to access the specific printing profiles for each printer using the slicer software of your choice.
 
-### Super Slicer
-- Profile File: [Link to Super Slicer Profile](link_to_profile_file)
-- Instructions: (Add any specific instructions for using the Super Slicer profile)
+## Usage Instructions
 
-## In-House Details
+1. Choose the appropriate printer directory based on the model you're using.
+2. Navigate to the slicer-specific subdirectory (e.g., "Cura," "Prusa Slicer," or "SuperSlicer").
+3. Download the corresponding printing profile for your slicer software.
 
-- (Include any other relevant in-house information, such as maintenance procedures, recommended filament types, or special techniques used in your manufacturing process)
+## Important Note
 
-## Contributing
+- Nozzle Diameter: The nozzle diameter is not specified as it may vary based on the material and printing requirements.
 
-We welcome contributions to this repository. If you have additional printing profiles, tips, or enhancements to share, please feel free to create a pull request.
+Thank you for choosing ITRL Manufacturing for your 3D printing needs. If you have any questions or need further assistance, please don't hesitate to reach out.
 
-## License
-
-This repository is under the [License Name or Link], so please review it before using or contributing to the project.
-
-Happy Printing!
-
+Happy 3D Printing!
