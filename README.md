@@ -42,7 +42,7 @@ You can click on the links above to access the specific printing profiles for ea
   - Ultimaker
     - Pull out some filament and check for "bite marks." If there is one, cut the filament and reinsert it.
   - Voron Trident
-    - ~~Preheat the bed and keep the enclosure closed for a few minutes to stabilize the internal temperatures.~~
+  -  ~~Preheat the bed and keep the enclosure closed for a few minutes to stabilize the internal temperatures.~~
 The first layer won't stick!
   1. **Refrain from using glue on the bed to create better first-layer adhesion unless you intend to clean the plate before thoroughly and after printing**
   2. Crank up the first layer flow rate (as high as 200%, in 10% increments; if you hear clicking while the first layer prints, it is likely set too high, and the issue lies elsewhere).
