@@ -48,7 +48,9 @@ You can click on the links above to access the specific printing profiles for ea
   1. **Refrain from using glue on the bed to create better first-layer adhesion unless you intend to clean the plate thoroughly before and after printing**
   2. Crank up the first layer flow rate (as high as 200%, in 10% increments; if you hear clicking while the first layer prints, it is likely set too high, and the issue lies elsewhere).
   3. Try increasing the bed temperature as well as significantly lowering the speed of the first layer. In the case of the Ultimakers, pull out some of the filament and check for "bite marks." If there are some, cut the filament and try again.
-  4. If that doesn't work, the bed might not be adequately levelled. However, this should only be needed on the Ultimaker 2+ and is often not the cause of issues (unless someone less knowledgeable has incorrectly levelled already). Please ensure you know what you are doing, as levelling poorly can damage the nozzle.
+  4. If that doesn't work, the bed might not be adequately levelled. However, this should only be needed on the Ultimaker 2+ and is often not the cause of issues (unless someone less knowledgeable has incorrectly levelled already). Please ensure you know what you are doing, as levelling poorly can damage the nozzle. Check the following to see if your first layer indicates being too thin / too close or too thick/far away:
+
+![image](https://github.com/KTH-SML/ITRL-Manufacturing/assets/21311514/577eaf8e-30e7-4db9-832f-9c69cd600eb7)
 
 ## Usage Instructions
 
