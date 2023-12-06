@@ -67,7 +67,6 @@ You can click on the links above to access the specific printing profiles for ea
 
 1. Clone the repo and open superslicer in the slicers folder 
 2. If it is your first time opening this program you will be greeted by a setup wizard, I recommend you add these machines (it will only be used for visuals, not functionality, that comes later)
-   ![image](https://github.com/nilsonstine/ITRL-Manufacturing/assets/21311514/2f3ac58c-a65c-4ad8-abff-7fb70f0f9f30)
    ![image](https://github.com/nilsonstine/ITRL-Manufacturing/assets/21311514/ec00988b-e2d9-497d-833d-95f026160538)
 3. Followed by pressing finish at the bottom right, next we will go ahead and import the preset profiles one by one
    ![image](https://github.com/nilsonstine/ITRL-Manufacturing/assets/21311514/2d9580dc-245d-4680-8569-0e4500d921ad)
