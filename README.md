@@ -54,10 +54,10 @@ You can click on the links above to access the specific printing profiles for ea
 
 ## Usage Instructions
 
-# SuperSlicer (Windows)
+### SuperSlicer (Windows)
 1. Copy the filament, printer and print folders to C:\Users\USERNAME\AppData\Roaming\SuperSlicer
 
-# SuperSlicer (General)
+### SuperSlicer (General)
 1. Choose the appropriate printer directory based on the model you're using.
 2. Navigate to the slicer-specific subdirectory (e.g., "Cura," "Prusa Slicer," or "SuperSlicer").
 3. Download the corresponding printing profile for your slicer software.
