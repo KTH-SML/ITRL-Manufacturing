@@ -6,29 +6,31 @@ Welcome to the ITRL Manufacturing GitHub repository, where you can find printing
 ## Printer Specifications
 
 ### Ultimaker 2+
-
+#### Currently under heavy maintenance 
 - Maximum Print Speed: 30 mm/s
 - Supported Filaments: PLA
 
 ### Ultimaker 3
-
+#### Currently under heavy maintenance
 - Maximum Print Speed: 70 mm/s
 - Supported Filaments: PLA
 
 ### Voron Trident
 
 - Maximum Print Speed: Up to 200 mm/s
-- Supported Filaments: TPU, ABS, PLA, ASA
+- Supported Filaments: TPU, ABS, ASA
 
 ## Printing Profiles
 
-You can find our printing profiles for Cura, Prusa Slicer, and SuperSlicer in the following directories:
+Here, you can find our printing profiles for Cura, Prusa Slicer, and SuperSlicer.
 
-- [Ultimaker 2+](Printers/Ultimaker2+/Profiles/)
-- [Ultimaker 3](Printers/Ultimaker3/Profiles/)
-- [Voron Trident](Printers/Voron%20Trident/Profiles/)
+We recommend dragging the filament, print, and printer settings folders for SuperSlicer into your OS's respective saved settings folder. Ensure that you have opened SuperSlicer at least once. Check out https://github.com/supermerill/SuperSlicer for SuperSlicer downloads.
 
-You can click on the links above to access the specific printing profiles for each printer using the slicer software of your choice.
+Windows: %appdata%/Roaming/superslicer
+
+Mac: /Users/[USER]/Library/Application Support/SuperSlicer
+
+Linux: ~/.config/SuperSlicer
 
 ## Recommendations
 
