@@ -43,7 +43,7 @@ Welcome to the comprehensive guide for the ITRL Manufacturing GitHub Repository.
 
 ### Installation instructions
 #### MAC OS
-The recommended install method is using brew. `To install brew type this into Terminal`:
+The recommended install method is using brew. To install brew type this into Terminal:
 ```console
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
@@ -53,12 +53,18 @@ brew install --cask superslicer
 ```
 
 #### Windows
-The recommended install method is using choco. I have made a quick installer located inside Installers, run the bat file as administrator, this will install choco and SuperSlicer pre release. If you are reading this far into the future, I do not recommend using this script.
-
+The recommended install method is choco. The `Start_SuperSlicer_WINDOWS` file will automatically check if superslicer is installed using choco, if not it will prompt the user asking if one would like to install. In case you do not have choco installed, run this command in powershell (admin)
+```
+Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
+```
+To avoid admin request spam, it does not handle upgrading superslicer. To upgrade superslicer run in an admin powershell (or cmd) terminal:
+```
+choco upgrade superslicer -y
+```
 ### Linux
 If you know Linux you probably don't need instructions on how to install superslicer, I have had most luck with appimages. 
 
-### Manual Profile Install
+### Manual
 For setting up SuperSlicer, transfer the relevant folders (filament, print, and printer settings) into the saved settings directory of your operating system. Make sure to launch SuperSlicer at least once prior to this action.
 
 - **Windows:** `%appdata%/Roaming/superslicer`
