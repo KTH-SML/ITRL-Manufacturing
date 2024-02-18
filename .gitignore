@@ -1,1 +1,18 @@
 **/.DS_Store
+/Profiles/SuperSlicer/sla_material
+/Profiles/SuperSlicer/cache
+/Profiles/SuperSlicer/ui_layout
+**.icloud
+Profiles/SuperSlicer/SuperSlicer.ini
+# Compiled AppleScript files
+**.scpt
+
+# AppleScript editor settings and backups
+**.applescript~
+
+# Temporary files
+.*.swp
+**~
+
+# Log files
+**.log

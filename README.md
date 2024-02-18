@@ -41,6 +41,24 @@ Welcome to the comprehensive guide for the ITRL Manufacturing GitHub Repository.
 
 ## 📋 Usage Instructions
 
+### Installation instructions
+#### MAC OS
+The recommended install method is using brew. `To install brew type this into Terminal`:
+```console
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
+Then using brew install superslicer:
+```console
+brew install --cask superslicer 
+```
+
+#### Windows
+The recommended install method is using choco. I have made a quick installer located inside Installers, run the bat file as administrator, this will install choco and SuperSlicer pre release. If you are reading this far into the future, I do not recommend using this script.
+
+### Linux
+If you know Linux you probably don't need instructions on how to install superslicer, I have had most luck with appimages. 
+
+### Manual Profile Install
 For setting up SuperSlicer, transfer the relevant folders (filament, print, and printer settings) into the saved settings directory of your operating system. Make sure to launch SuperSlicer at least once prior to this action.
 
 - **Windows:** `%appdata%/Roaming/superslicer`
