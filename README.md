@@ -83,13 +83,7 @@ After this, follow the SuperSlicer setup guide. The profiles will be available i
 - **Nozzle Size:** This is important for designing small features.
 - **Hole Diameters:** Design holes smaller than needed and refine them post-printing for accuracy.
 - **Sharp Corners:** Avoid these to minimize warping.
-
-## Getting Started
-
-1. **Clone the Repository:** Begin by cloning the repository to your local machine.
-2. **Initial Setup:** A setup wizard will guide you during your first opening. Add the printers for visual reference.
-   ![Setup Wizard](https://github.com/nilsonstine/ITRL-Manufacturing/assets/21311514/ec00988b-e2d9-497d-833d-95f026160538)
-3. **Import Profiles:** Sequentially import the preset profiles.
-   ![Import Profiles](https://github.com/nilsonstine/ITRL-Manufacturing/assets/21311514/2d9580dc-245d-4680-8569-0e4500d921ad)
+- **Infill:** Infill does not impact strength as much as perimeter count, I personally use 5% infill, only so internal overhangs are supported *but not for strength*. I highly recommend watching this video if strength is a concern: https://www.youtube.com/watch?v=AmEaNAwFSfI
+- **A Note on Supports:** 9/10 of the instances supports are avoidable. Keep in mind the limitations of FDM printing when designing. For ex, if there is a sharp 90% angle, consider adding a champfer. I highly recommend watching this video: 
 
 Happy printing! 🎉
