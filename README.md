@@ -51,9 +51,16 @@ Then using brew install superslicer:
 ```console
 brew install --cask superslicer 
 ```
+If this is your first time installing SuperSlicer, initial attempts to run the script `Start_SuperSlicer_MACOS` may result in a security-related error. To resolve this, ensure you open SuperSlicer by right-clicking and selecting 'Open' in the Applications folder (provided previous steps have been correctly completed). 
+
+After this, you can close SuperSlicer and run the `Start_SuperSlicer_MACOS` app as normal. If you're concerned about the script being a virus, rest assured that the source code for the script is available in the package content.
+
+Assuming you have managed to open SuperSlicer using the app, continue on to [General](#general).
 
 #### Windows
-The recommended install method is choco. The `Start_SuperSlicer_WINDOWS` file will automatically check if superslicer is installed using choco, if not it will prompt the user asking if one would like to install. In case you do not have choco installed, run this command in powershell (admin)
+The recommended install method is choco. The `Start_SuperSlicer_WINDOWS` file will automatically check if superslicer is installed using choco, if not it will prompt the user asking if one would like to install (if this happens, close the script and reopen it as admin). 
+
+In case you do not have choco installed, run this command in powershell (admin)
 ```
 Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
 ```
@@ -61,18 +68,21 @@ To avoid admin request spam, it does not handle upgrading superslicer. To upgrad
 ```
 choco upgrade superslicer -y
 ```
+
+Assuming you have managed to open superslicer using the .bat file, continue on to [general](#General).
+
 ### Linux
 If you know Linux you probably don't need instructions on how to install superslicer, I have had most luck with appimages. 
 
 ### Manual
-For setting up SuperSlicer, transfer the relevant folders (filament, print, and printer settings) into the saved settings directory of your operating system. Make sure to launch SuperSlicer at least once prior to this action.
+For setting up SuperSlicer, transfer the relevant folders (filament, print, and printer settings) into the saved settings directory of your operating system. Ensure that you launch SuperSlicer at least once before performing this action.
 
 - **Windows:** `%appdata%/Roaming/superslicer`
 - **Mac:** `/Users/[USER]/Library/Application Support/SuperSlicer`
 - **Linux:** `~/.config/SuperSlicer`
 
-After this, follow the SuperSlicer setup guide. The profiles will be available in the dropdown menus upon completion.
-
+### General
+When you open SuperSlicer for the first time, you are likely to encounter many introduction screens. These are irrelevant and can be closed. You should then see various profiles that I have created in the context menus on the right (refer to the image at the bottom of this page). If they are not present, there might be an issue with the script, or you may need to revisit the instructions to ensure they were followed accurately. If the profiles still don't appear, contact me by opening an issue here, or resort to using the [manual method](#manual). 
 
 ## 🛠️ Design Considerations for 3D Printing
 
@@ -84,6 +94,9 @@ After this, follow the SuperSlicer setup guide. The profiles will be available i
 - **Hole Diameters:** Design holes smaller than needed and refine them post-printing for accuracy.
 - **Sharp Corners:** Avoid these to minimize warping.
 - **Infill:** Infill does not impact strength as much as perimeter count, I personally use 5% infill, only so internal overhangs are supported *but not for strength*. I highly recommend watching this video if strength is a concern: https://www.youtube.com/watch?v=AmEaNAwFSfI
-- **A Note on Supports:** 9/10 of the instances supports are avoidable. Keep in mind the limitations of FDM printing when designing. For ex, if there is a sharp 90% angle, consider adding a champfer. I highly recommend watching this video: 
+- **A Note on Supports:** 9/10 of the instances supports are avoidable. Keep in mind the limitations of FDM printing when designing. For ex, if there is a sharp 90% angle, consider adding a champfer. I highly recommend watching this video:
+
+<img width="521" alt="image" src="https://github.com/KTH-SML/ITRL-Manufacturing/assets/21311514/8624b4f3-2ebb-4902-a8e0-67ad38a14507">
+
 
 Happy printing! 🎉
