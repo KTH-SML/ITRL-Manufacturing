@@ -7,10 +7,9 @@
 !/Profiles/SuperSlicer/print/
 
 # macOS system files
-.DS_Store
 .AppleDouble
 .LSOverride
-**/.DS_Store
+**.DS_Store
 
 # Thumbnail cache files
 ._*
@@ -54,9 +53,6 @@ ehthumbs_vista.db
 
 # Ignore specific ini file in SuperSlicer directory
 Profiles/SuperSlicer/SuperSlicer.ini
-
-# Compiled AppleScript files
-**.scpt
 
 # AppleScript editor settings and backups
 **.applescript~
