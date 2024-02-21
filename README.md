@@ -21,19 +21,10 @@ Welcome to the comprehensive guide for the ITRL Manufacturing GitHub Repository.
 - **Maximum Print Speed:** Up to 200 mm/s
 - **Supported Filaments:** TPU, ABS, ASA
 
-## 🛠️ Recommendations
-
-### Slicer Software
-- **For Voron Trident & Ultimaker2+:** It is recommended to use SuperSlicer. [Download SuperSlicer here](https://github.com/supermerill/SuperSlicer/releases/).
-- **For Ultimaker3:** The use of Cura is advised.
-
-### Pre-Flight Checks
-- **Ultimaker:** Inspect the filament for any bite marks. If found, trim and reinsert the filament.
-- **Voron Trident:** The previously advised step of preheating the bed is now deemed unnecessary.
-
 ## 🔧 Troubleshooting
 
 ### First Layer Adhesion Issues
+0. Clean Clean Clean. Often non obvious bed failures are due to a greasy/dusty bed (grease from hands, feet, faces), usually from hands. That is why it is important to wipe the bed down with isopropyl alcohol once in a while.
 1. Avoid applying glue to the bed unless it's accompanied by thorough cleaning before and after printing, (under no circumstance should glue be used on the Voron Trident).
 2. Gradually increase the first layer flow rate, potentially up to 200%. Be mindful of any clicking sounds, indicating that the setting might be too high.
 3. Consider raising the bed temperature and lowering the first layer's speed. For Ultimakers, remember to check and trim the filament for [bite marks](https://content.invisioncic.com/ultimake/monthly_2015_08/Filament.jpg.f86418ddcaa460f1f2acc257042f0c42.jpg).
