@@ -75,6 +75,8 @@ For setting up SuperSlicer, transfer the relevant folders (filament, print, and 
 ### General
 When you open SuperSlicer for the first time, you are likely to encounter many introduction screens. These are irrelevant and can be closed. You should then see various profiles that I have created in the context menus on the right (refer to the image at the bottom of this page). If they are not present, there might be an issue with the script, or you may need to revisit the instructions to ensure they were followed accurately. If the profiles still don't appear, contact me by opening an issue here, or resort to using the [manual method](#manual). 
 
+To access the trident head over to [trident.sml.dedyn.io](https://trident.sml.dedyn.io) and use the regular login details. Then it is simply a matter of uploading the gcode.
+
 ## 🛠️ Design Considerations for 3D Printing
 
 - **Build Volume:** Be aware of your printer's dimensions to design parts that fit.
