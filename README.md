@@ -46,7 +46,7 @@ If this is your first time installing SuperSlicer, initial attempts to run the s
 
 After this, you can close SuperSlicer and run the `Start_SuperSlicer_MACOS` app as normal. If you're concerned about the script being a virus, rest assured that the source code for the script is available in the package content.
 
-Assuming you have managed to open SuperSlicer using the app, continue on to [General](#general).
+Assuming you have managed to open SuperSlicer using the app, continue on to [Usage Instructions](#Usage-Instructions).
 
 #### Windows
 The recommended install method is choco. The `Start_SuperSlicer_WINDOWS` file will automatically check if superslicer is installed using choco, if not it will prompt the user asking if one would like to install (if this happens, close the script and reopen it as admin). 
@@ -60,7 +60,7 @@ To avoid admin request spam, it does not handle upgrading superslicer. To upgrad
 choco upgrade superslicer -y
 ```
 
-Assuming you have managed to open superslicer using the .bat file, continue on to [usuage instructions](#Usage Instructions).
+Assuming you have managed to open superslicer using the .bat file, continue on to [Usage Instructions](#Usage-Instructions).
 
 ### Linux
 If you know Linux you probably don't need instructions on how to install superslicer, I have had most luck with appimages. 
