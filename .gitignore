@@ -1,1 +1,62 @@
-**/.DS_Store
+# Ignore everything in the /Profiles/SuperSlicer/ directory
+/Profiles/SuperSlicer/*
+
+# But include these specific directories
+!/Profiles/SuperSlicer/filament/
+!/Profiles/SuperSlicer/printer/
+!/Profiles/SuperSlicer/print/
+
+# macOS system files
+.AppleDouble
+.LSOverride
+**.DS_Store
+
+# Thumbnail cache files
+._*
+
+# Files that might appear in the root of a volume
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Directories potentially created on external disks
+.Spotlight-V100
+.Trashes
+
+# Windows system files
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+
+# Windows shortcuts
+*.lnk
+
+# Linux system files
+*~
+
+# General temporary files
+*.tmp
+*.temp
+*.swp
+*.swo
+*.bak
+*.bak[0-9]*
+*.backup
+
+# Ignore files with .icloud extension
+**.icloud
+
+# Ignore specific ini file in SuperSlicer directory
+Profiles/SuperSlicer/SuperSlicer.ini
+
+# AppleScript editor settings and backups
+**.applescript~
+
+# Log files
+**.log
+crash_log.txt
