@@ -17,6 +17,10 @@ Welcome to the comprehensive guide for the ITRL Manufacturing GitHub Repository.
 - **Maximum Print Speed:** 70 mm/s
 - **Supported Filaments:** PLA
 
+### Prusa MK4
+- **Maximum Print Speed:** 170 mm/s
+- **Tested Filaments:** PLA
+
 ### Voron Trident
 - **Maximum Print Speed:** Up to 200 mm/s
 - **Supported Filaments:** TPU, ABS, ASA
@@ -26,13 +30,24 @@ Welcome to the comprehensive guide for the ITRL Manufacturing GitHub Repository.
 ### First Layer Adhesion Issues
 0. Clean Clean Clean. Often non obvious bed failures are due to a greasy/dusty bed (grease from hands, feet, faces), usually from hands. That is why it is important to wipe the bed down with isopropyl alcohol once in a while.
 1. Avoid applying glue to the bed unless it's accompanied by thorough cleaning before and after printing, (under no circumstance should glue be used on the Voron Trident).
-2. Gradually increase the first layer flow rate, potentially up to 200%. Be mindful of any clicking sounds, indicating that the setting might be too high.
-3. Consider raising the bed temperature and lowering the first layer's speed. For Ultimakers, remember to check and trim the filament for [bite marks](https://content.invisioncic.com/ultimake/monthly_2015_08/Filament.jpg.f86418ddcaa460f1f2acc257042f0c42.jpg).
-4. Ensure the bed is properly leveled. This is particularly critical for Ultimaker 2+. Incorrect leveling can result in nozzle damage. [See this first layer calibration guide](https://github.com/KTH-SML/ITRL-Manufacturing/assets/21311514/577eaf8e-30e7-4db9-832f-9c69cd600eb7).
 
-## 📋 Usage Instructions
+##### Does not apply to the PrusaMK4:
+1. Gradually increase the first layer flow rate, potentially up to 200%. Be mindful of any clicking sounds, indicating that the setting might be too high.
+2. Consider raising the bed temperature and lowering the first layer's speed. For Ultimakers, remember to check and trim the filament for [bite marks](https://content.invisioncic.com/ultimake/monthly_2015_08/Filament.jpg.f86418ddcaa460f1f2acc257042f0c42.jpg).
+3. Ensure the bed is properly leveled. This is particularly critical for Ultimaker 2+. Incorrect leveling can result in nozzle damage. [See this first layer calibration guide](https://github.com/KTH-SML/ITRL-Manufacturing/assets/21311514/577eaf8e-30e7-4db9-832f-9c69cd600eb7).
 
-### Installation instructions
+## 📋 Instructions
+### Installation instructions PrusaMK4
+Most if not all questions that may arise regarding the Prusa are answered in the official user guide next to the printer, [here is the online version](https://www.prusa3d.com/downloads/manual/prusa3d_manual_MK4_MK39_103_en.pdf)
+
+To get started quickly. Download PrusaSlicer [here](https://www.prusa3d.com/en/page/prusaslicer_424/) and follow the wizard, adding the PrusaMK4 preset. Then, instead of using the USB (in a pinch its ok but USBs have a tendency to dissapear in SML), print wirelessly directly from PrusaSlicer. 
+##### Printing via the WebUI
+Make sure you are connected to the SML network, [go here](http://PrusaMK4) or [try here](http://PrusaMK4.local). The login details are ```Maker``` and ```UFw8c3FFsrb8Lq3```
+##### Printing directly from PrusaSlicer
+[Read more here, skip to step 3](https://help.prusa3d.com/guide/sending-files-from-prusaslicer-to-prusalink_222961). Make sure you are connected to the SML network, use ip ```PrusaMK4``` and APIKey ```UFw8c3FFsrb8Lq3```
+
+
+### Installation instructions Trident
 #### MAC OS
 The recommended install method is using brew. To install brew type this into Terminal:
 ```console
@@ -72,7 +87,7 @@ For setting up SuperSlicer, transfer the relevant folders (filament, print, and 
 - **Mac:** `/Users/[USER]/Library/Application Support/SuperSlicer`
 - **Linux:** `~/.config/SuperSlicer`
 
-### Usage Instructions
+### Usage Instructions Trident
 When you open SuperSlicer for the first time, you are likely to encounter many introduction screens. These are irrelevant and can be closed. You should then see various profiles that I have created in the context menus on the right (refer to the image at the bottom of this page). If they are not present, there might be an issue with the script, or you may need to revisit the instructions to ensure they were followed accurately. If the profiles still don't appear, contact me by opening an issue here, or resort to using the [manual method](#manual). 
 
 To access the trident head over to [trident.sml.dedyn.io](https://trident.sml.dedyn.io) and use the regular login details. Then it is simply a matter of uploading the gcode.
