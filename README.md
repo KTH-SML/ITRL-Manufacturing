@@ -37,15 +37,6 @@ Welcome to the comprehensive guide for the ITRL Manufacturing GitHub Repository.
 3. Ensure the bed is properly leveled. This is particularly critical for Ultimaker 2+. Incorrect leveling can result in nozzle damage. [See this first layer calibration guide](https://github.com/KTH-SML/ITRL-Manufacturing/assets/21311514/577eaf8e-30e7-4db9-832f-9c69cd600eb7).
 
 ## 📋 Instructions
-### Installation instructions PrusaMK4
-Most if not all questions that may arise regarding the Prusa are answered in the official user guide next to the printer, [here is the online version](https://www.prusa3d.com/downloads/manual/prusa3d_manual_MK4_MK39_103_en.pdf)
-
-To get started quickly. Download PrusaSlicer [here](https://www.prusa3d.com/en/page/prusaslicer_424/) and follow the wizard, adding the PrusaMK4 preset. Then, instead of using the USB (in a pinch its ok but USBs have a tendency to dissapear in SML), print wirelessly directly from PrusaSlicer. 
-##### Printing via the WebUI
-Make sure you are connected to the SML network, [go here](http://PrusaMK4) or [try here](http://PrusaMK4.local). The login details are ```Maker``` and ```UFw8c3FFsrb8Lq3```
-##### Printing directly from PrusaSlicer
-[Read more here, skip to step 3](https://help.prusa3d.com/guide/sending-files-from-prusaslicer-to-prusalink_222961). Make sure you are connected to the SML network, use ip ```PrusaMK4``` and APIKey ```UFw8c3FFsrb8Lq3```
-
 
 ### Installation instructions Trident
 #### MAC OS
@@ -78,7 +69,7 @@ choco upgrade superslicer -y
 Assuming you have managed to open superslicer using the .bat file, continue on to [Usage Instructions](#Usage-Instructions).
 
 ### Linux
-If you know Linux you probably don't need instructions on how to install superslicer, I have had most luck with appimages. 
+If you know Linux you probably don't need instructions on how to install superslicer, I have had the most luck with appimages. 
 
 ### Manual
 For setting up SuperSlicer, transfer the relevant folders (filament, print, and printer settings) into the saved settings directory of your operating system. Ensure that you launch SuperSlicer at least once before performing this action.
@@ -87,21 +78,48 @@ For setting up SuperSlicer, transfer the relevant folders (filament, print, and 
 - **Mac:** `/Users/[USER]/Library/Application Support/SuperSlicer`
 - **Linux:** `~/.config/SuperSlicer`
 
-### Usage Instructions Trident
+#### Usage Instructions Trident
 When you open SuperSlicer for the first time, you are likely to encounter many introduction screens. These are irrelevant and can be closed. You should then see various profiles that I have created in the context menus on the right (refer to the image at the bottom of this page). If they are not present, there might be an issue with the script, or you may need to revisit the instructions to ensure they were followed accurately. If the profiles still don't appear, contact me by opening an issue here, or resort to using the [manual method](#manual). 
 
 To access the trident head over to [trident.sml.dedyn.io](https://trident.sml.dedyn.io) and use the regular login details. Then it is simply a matter of uploading the gcode.
+
+### Installation instructions PrusaMK4
+Most if not all questions that may arise regarding the Prusa are answered in the official user guide next to the printer, [here is the online version](https://www.prusa3d.com/downloads/manual/prusa3d_manual_MK4_MK39_103_en.pdf#page=41). Although not a requirement, if you are new to 3D printing I recommend reading the manual in full to get a pretty comprenhensive understanding of how the machine works and general tips and tricks. If in a rush, skip to page 41.
+
+Download PrusaSlicer [here](https://www.prusa3d.com/en/page/prusaslicer_424/) or check quickinstall commands; and follow the wizard, adding the PrusaMK4 preset.
+
+###### Quickinstall commands:
+Windows: 
+```
+choco install prusaslicer -y
+```
+Mac:
+```
+brew install --cask prusaslicer
+```
+Linux:
+You are on your own for now.
+
+
+Then, instead of using the USB (in a pinch its ok but USBs have a tendency to dissapear in SML), print wirelessly directly from PrusaSlicer. 
+
+##### Printing via the WebUI
+Make sure you are connected to the SML network and [go here](http://10.0.2.207), or [try here](http://PrusaMK4.local) or [perhaps try here](http://PrusaMK4). The login details are ```Maker``` and ```UFw8c3FFsrb8Lq3```
+##### Printing directly from PrusaSlicer
+[Read more here, skip to step 3 in the guide](https://help.prusa3d.com/guide/sending-files-from-prusaslicer-to-prusalink_222961). 
+
+The guide will need you to know the ip and APIKey: Make sure you are connected to the SML network, try ip ```PrusaMK4``` or ```10.0.2.207``` and APIKey ```UFw8c3FFsrb8Lq3```
 
 ## 🛠️ Design Considerations for 3D Printing
 
 - **Build Volume:** Be aware of your printer's dimensions to design parts that fit.
 - **Print Orientation:** Decide this early to guide your design choices.
-- **Overhangs:** Angles below 45 degrees require support material.
-- **Bridging:** Supports are not necessary for gaps up to 10 mm.
+- **Overhangs:** Angles below 45 degrees often require support material.
+- **Bridging:** Supports are not necessary for gaps up to around 10 mm.
 - **Nozzle Size:** This is important for designing small features.
 - **Hole Diameters:** Design holes smaller than needed and refine them post-printing for accuracy.
 - **Sharp Corners:** Avoid these to minimize warping.
-- **Infill:** Infill does not impact strength as much as perimeter count, I personally use 5% infill, only so internal overhangs are supported *but not for strength*. I highly recommend watching this video if strength is a concern: https://www.youtube.com/watch?v=AmEaNAwFSfI
+- **Infill:** Infill does not impact strength as much as perimeter count, I personally use 5% infill, only so internal overhangs are supported *but not for strength*. I highly recommend watching this video if strength is a concern: [video link](https://www.youtube.com/watch?v=AmEaNAwFSfI)
 - **A Note on Supports:** 9/10 of the instances supports are avoidable. Keep in mind the limitations of FDM printing when designing. For ex, if there is a sharp 90% angle, consider adding a champfer. I highly recommend watching this video:
 
 <img width="521" alt="image" src="https://github.com/KTH-SML/ITRL-Manufacturing/assets/21311514/8624b4f3-2ebb-4902-a8e0-67ad38a14507">
