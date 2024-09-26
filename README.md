@@ -28,17 +28,13 @@ Welcome to the comprehensive guide for the ITRL Manufacturing GitHub Repository.
 ## 🔧 Troubleshooting
 
 ### First Layer Adhesion Issues
-0. Clean Clean Clean. Often non obvious bed failures are due to a greasy/dusty bed (grease from hands, feet, faces), usually from hands. That is why it is important to wipe the bed down with isopropyl alcohol once in a while.
-1. Avoid applying glue to the bed unless it's accompanied by thorough cleaning before and after printing, (under no circumstance should glue be used on the Voron Trident).
-
-##### Does not apply to the PrusaMK4:
-1. Gradually increase the first layer flow rate, potentially up to 200%. Be mindful of any clicking sounds, indicating that the setting might be too high.
-2. Consider raising the bed temperature and lowering the first layer's speed. For Ultimakers, remember to check and trim the filament for [bite marks](https://content.invisioncic.com/ultimake/monthly_2015_08/Filament.jpg.f86418ddcaa460f1f2acc257042f0c42.jpg).
-3. Ensure the bed is properly leveled. This is particularly critical for Ultimaker 2+. Incorrect leveling can result in nozzle damage. [See this first layer calibration guide](https://github.com/KTH-SML/ITRL-Manufacturing/assets/21311514/577eaf8e-30e7-4db9-832f-9c69cd600eb7).
+1. Clean Clean Clean. Often non obvious bed failures are due to a greasy/dusty bed (grease from hands, feet, faces), usually from hands. 
+Take off the magnetic build plate and clean it as if it were a plate (dishsoap and brush). 
+2. Avoid applying glue to the bed unless it's accompanied by thorough cleaning before and after printing.
 
 ## 📋 Instructions
 
-### Installation instructions Trident
+### Automatic Installation Instructions Trident 
 #### MAC OS
 The recommended install method is using brew. To install brew type this into Terminal:
 ```console
@@ -61,7 +57,7 @@ In case you do not have choco installed, run this command in powershell (admin)
 ```
 Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
 ```
-To avoid admin request spam, it does not handle upgrading superslicer. To upgrade superslicer run in an admin powershell (or cmd) terminal:
+To avoid admin request spam, the script does not handle upgrading superslicer. To upgrade superslicer run in an admin powershell (or cmd) terminal:
 ```
 choco upgrade superslicer -y
 ```
@@ -79,7 +75,9 @@ For setting up SuperSlicer, transfer the relevant folders (filament, print, and 
 - **Linux:** `~/.config/SuperSlicer`
 
 #### Usage Instructions Trident
-When you open SuperSlicer for the first time, you are likely to encounter many introduction screens. These are irrelevant and can be closed. You should then see various profiles that I have created in the context menus on the right (refer to the image at the bottom of this page). If they are not present, there might be an issue with the script, or you may need to revisit the instructions to ensure they were followed accurately. If the profiles still don't appear, contact me by opening an issue here, or resort to using the [manual method](#manual). 
+When you open SuperSlicer for the first time, you are likely to encounter many introduction screens. These are irrelevant and can be closed. 
+
+You should then see various profiles that I have created in the context menus on the right (refer to the image at the bottom of this page). If they are not present, there might be an issue with the script, or you may need to revisit the instructions to ensure they were followed accurately. If the profiles still don't appear, contact me by opening an issue here, or resort to using the [manual method](#manual). 
 
 To access the trident head over to [trident.sml.dedyn.io](https://trident.sml.dedyn.io) and use the regular login details. Then it is simply a matter of uploading the gcode.
 
@@ -98,10 +96,13 @@ Mac:
 brew install --cask prusaslicer
 ```
 Linux:
+```
 You are on your own for now.
-
+```
 
 Then, instead of using the USB (in a pinch its ok but USBs have a tendency to dissapear in SML), print wirelessly directly from PrusaSlicer. 
+
+###### USB disappearance counter as of 24 Sep 2024: 1 
 
 ##### Printing via the WebUI
 Make sure you are connected to the SML network and [go here](http://10.0.2.207), or [try here](http://PrusaMK4.local) or [perhaps try here](http://PrusaMK4). The login details are ```Maker``` and ```UFw8c3FFsrb8Lq3```
@@ -116,13 +117,9 @@ The guide will need you to know the ip and APIKey: Make sure you are connected t
 - **Print Orientation:** Decide this early to guide your design choices.
 - **Overhangs:** Angles below 45 degrees often require support material.
 - **Bridging:** Supports are not necessary for gaps up to around 10 mm.
-- **Nozzle Size:** This is important for designing small features.
-- **Hole Diameters:** Design holes smaller than needed and refine them post-printing for accuracy.
-- **Sharp Corners:** Avoid these to minimize warping.
+- **Nozzle Size:** This is important for designing small features. Try to keep features above 1mm in the xy plane.
+- **Sharp Corners:** Avoid these to minimize warping. Fillets also make the parts look nicer!
 - **Infill:** Infill does not impact strength as much as perimeter count, I personally use 5% infill, only so internal overhangs are supported *but not for strength*. I highly recommend watching this video if strength is a concern: [video link](https://www.youtube.com/watch?v=AmEaNAwFSfI)
-- **A Note on Supports:** 9/10 of the instances supports are avoidable. Keep in mind the limitations of FDM printing when designing. For ex, if there is a sharp 90% angle, consider adding a champfer. I highly recommend watching this video:
-
-<img width="521" alt="image" src="https://github.com/KTH-SML/ITRL-Manufacturing/assets/21311514/8624b4f3-2ebb-4902-a8e0-67ad38a14507">
-
+- **A Note on Supports:** 9/10 of the instances supports are avoidable. Keep in mind the limitations of FDM printing when designing. For ex, if there is a sharp 90% angle, consider adding a champfer. 
 
 Happy printing! 🎉
