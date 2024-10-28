@@ -107,7 +107,7 @@ Then, instead of using the USB (in a pinch its ok but USBs have a tendency to di
 ###### USB disappearance counter as of 24 Sep 2024: 1 
 
 ##### Printing via the WebUI
-Make sure you are connected to the SML network and [go here](http://10.0.2.207), or [try here](http://PrusaMK4.local) or [perhaps try here](http://PrusaMK4). The login details are ```Maker``` and ```4iew2XS2RC2JuhR```
+Make sure you are connected to the SML network and [go here](http://10.0.2.207), or [try here](http://PrusaMK4.local) or [perhaps try here](http://PrusaMK4). The login details are ```maker``` and ```4ieW2XS2RC2JuhR```
 ##### Printing directly from PrusaSlicer
 [Read more here, skip to step 3 in the guide](https://help.prusa3d.com/guide/sending-files-from-prusaslicer-to-prusalink_222961). 
 
