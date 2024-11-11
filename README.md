@@ -81,7 +81,7 @@ You should then see various profiles that I have created in the context menus on
 
 I have made some generic profiles that seem to work reliably and labelled them with recommended.
 
-To access the trident head over to [trident.sml.dedyn.io](https://trident.sml.dedyn.io) and use the regular login details. Then it is simply a matter of uploading the gcode.
+To access the trident head over to [trident.sml.dedyn.io](https://trident.sml.dedyn.io) (if it fails to connect, try a hard reload) and use the regular login details. Then it is simply a matter of uploading the gcode.
 
 ### Installation instructions PrusaMK4
 Most if not all questions that may arise regarding the Prusa are answered in the official user guide next to the printer, [here is the online version](https://www.prusa3d.com/downloads/manual/prusa3d_manual_MK4_MK39_103_en.pdf#page=41). Although not a requirement, if you are new to 3D printing I recommend reading the manual in full to get a pretty comprenhensive understanding of how the machine works and general tips and tricks. If in a rush, skip to page 41.
