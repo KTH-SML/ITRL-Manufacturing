@@ -44,6 +44,11 @@ Then using brew install superslicer:
 ```console
 brew install --cask superslicer 
 ```
+You may face an "is damaged and can’t be opened" error when trying to open superslicer for the first time, run the following to fix it
+```console
+xattr -cr /Applications/SuperSlicer.app
+```
+
 If this is your first time installing SuperSlicer, initial attempts to run the script `Start_SuperSlicer_MACOS` may result in a security-related error. To resolve this, ensure you open SuperSlicer by right-clicking and selecting 'Open' in the Applications folder (provided previous steps have been correctly completed). 
 
 After this, you can close SuperSlicer and run the `Start_SuperSlicer_MACOS` app as normal. If you're concerned about the script being a virus, rest assured that the source code for the script is available in the package content.
